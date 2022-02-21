@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
 
   }
@@ -35,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background: var(--background);
-    -webkit-from-smoothing: antialiased;
+    -webkit-from-smoothing: antialiased !important;
   }
 
   body, input, textarea, button{
