@@ -1,21 +1,32 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "./styles";
 
-export function TransactionsTable(){
-  useEffect(()=>{
-    api.get('transactions')
-    .then(response => console.log(response.data))
+interface Transaction {
+  id: number;
+  title: string;
+  amount: number;
+  type: string;
+  category: string;
+  createdAt: string;
+}
+
+export function TransactionsTable() {
+  const [transaction, setTransaction] = useState<Transaction[]>([]);
+
+  useEffect(() => {
+    api.get("transactions")
+    .then((response) => setTransaction(response.data.transactions));
   }, []);
 
-
-  return(
+  return (
     <div>
       <Container>
         <table>
           <thead>
             <tr>
-              <th className="title">Titulo</th>
+              {/*className="title"*/}
+              <th>Titulo</th>
               <th>Valor</th>
               <th>Categoria</th>
               <th>Data</th>
@@ -23,21 +34,25 @@ export function TransactionsTable(){
           </thead>
 
           <tbody>
-            <tr>
-              <td>Desenvolvimento de Web site</td>
-              <td className="deposit">R$12000.00</td>
-              <td>Desenvolvimento</td>
-              <td>20/02/2021</td>
-            </tr>
-            <tr>
-              <td>Aluguel</td>
-              <td className="withdraw">-R$1100.00</td>
-              <td>Casa</td>
-              <td>20/02/2021</td>
-            </tr>
+            {transaction.map(transaction =>(
+              <tr key={transaction.id}>
+                <td>{transaction.title}</td>
+                <td className={transaction.type}>
+                  {new Intl.NumberFormat('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                  }).format(transaction.amount)}
+                </td>
+                <td>{transaction.category}</td>
+                <td>
+                  {new Intl.DateTimeFormat('pt-BR').format(
+                    new Date(transaction.createdAt))}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </Container>
     </div>
-  )
+  );
 }
