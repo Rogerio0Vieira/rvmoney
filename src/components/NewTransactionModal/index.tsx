@@ -10,7 +10,6 @@ interface NewTransactionModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
 }
-//Sempre que eu preciso armazenar uma informação de um click ou imput utilizar o useSatate para quardar o estado
 
 export function NewTransactionModal({
   isOpen,
