@@ -4,12 +4,12 @@ import { GlobalStyle } from "./styles/global";
 import { useState } from "react";
 import Modal from 'react-modal';
 import { NewTransactionModal } from "./components/NewTransactionModal";
-import { TransactionsProvider } from "./TransactionsContext";
+import { TransactionsProvider } from "./hooks/useTransactions";
 
 Modal.setAppElement('#root');
 
 
-export function App() { //Utilizar o export ao inves do export default
+export function App() { 
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false);
 
   function handleOpenNewTransactionModal(){
