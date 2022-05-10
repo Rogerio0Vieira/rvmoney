@@ -53,11 +53,11 @@ Projeto criado durante o módulo de React do curso Ignite, o projeto tem como ob
 ## APP 
 
 <p align="center">
-<a href="">
-  <img src="./.github/apphome.png" width=350 alt="RV Money"/>
+<a href="./.github/apphome.png">
+  <img src="./.github/apphome.png" width=600 alt="RV Money"/>
 </a>
-<a href="">
-  <img src="./.github/gifprojeto.gif" width=500 alt="RV Money"/>
+<a href="./.github/gifprojeto.gif">
+  <img src="./.github/gifprojeto.gif" width=600 alt="RV Money"/>
 </a>
 </p>
 
