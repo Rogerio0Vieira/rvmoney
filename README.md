@@ -30,16 +30,15 @@ Projeto criado durante o módulo de React do curso Ignite, o projeto tem como ob
 
 - [MirageJS](https://miragejs.com/)
   - O Mirage JS é uma biblioteca de simulação de API que permite criar, testar e compartilhar um aplicativo JavaScript completo e funcional sem precisar depender de nenhum serviço de back-end. Utilizei esta biblioteca para criação da API simulada onde as transações são feitas.
-<br>
+
 - [Axios](https://axios-http.com/ptbr/docs/intro)
   - Axios é um cliente HTTP baseado-em-promessas para o node.js e para o navegador. Utilizado aqui para ligar o front a API.
-<br>
+
 - [React modal](https://www.npmjs.com/package/react-modal)
   - Biblioteca utilizada na criação do modal que é exibido ao clicar em "Nova Transação".
-<br>
+
 - [Styled components](https://styled-components.com/)
   - Biblioteca para criação de componentes estilizados utilizando css in js.
-<br>
 
 - [Polished](https://polished.js.org/)
   - Biblioteca utilizada para os efeitos de escurecer dos botões ao passar o mouse em cima, ela utiliza a cor inserida e pode tanto escurecer a cor informada como também clarear.
