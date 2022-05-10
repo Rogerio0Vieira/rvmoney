@@ -57,7 +57,7 @@ Projeto criado durante o módulo de React do curso Ignite, o projeto tem como ob
   <img src="./.github/apphome.png" width=350 alt="RV Money"/>
 </a>
 <a href="">
-  <img src="./.github/gifprojeto.gif" width=350 alt="RV Money"/>
+  <img src="./.github/gifprojeto.gif" width=500 alt="RV Money"/>
 </a>
 </p>
 
