@@ -14,7 +14,7 @@ Projeto criado durante o módulo de React do curso Ignite, o projeto tem como ob
 
 ## Objetivos 🎯
 
-- Utilização do figma para compor o desing
+- Utilização do figma para compor o design
 - Utilização de Hooks
 - Utilização de contexto
 
